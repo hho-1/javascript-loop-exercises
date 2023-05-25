@@ -1,4 +1,4 @@
-//1
+/* /* //1
 
 let price2 = +prompt("Ücreti giriniz: ")
 
@@ -138,7 +138,7 @@ for(let i = 1; i <=15; i++){
 * * * *  
 * * * * * */  
 
-let pattern = "";
+/* let pattern = "";
 for (let i = 1; i <= 5; i++){
     for (let j = 1; j <= i; j++){
         pattern += "* ";
@@ -204,4 +204,45 @@ for (let i = 100; i < 1000; i++){
     let yuzler = temp;
 
     if(birler**3 + onlar**3 + yuzler**3 === i) console.log(i);
+}  */ 
+
+//    12-  Su patterni ortaya cikaran kodu yazalim
+       /*   *
+           ***
+          *****
+         ******* 
+*/  
+
+/* let n = 5;
+let pattern = "";
+         
+for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n - i; j++) {
+        pattern += " ";
+    }
+    for (let k = 0; k < 2 * i - 1; k++) {
+    pattern += "*";
+    }
+    pattern += "\n";
 }
+console.log(pattern); */
+
+
+
+//   13-  Baklava sekli ortaya cikar
+
+
+function baklava(n) {
+    for (let i = 1; i <= n; i++) {
+        let star = "*";
+        let space= " ";
+        console.log(`${space.repeat(n-i)}${star.repeat((2*i)-1)}`);
+    }
+    for (let i = n; i >= 1; i--) {
+        let star = "*";
+        let space= " ";
+        console.log(`${space.repeat(n-i)}${star.repeat((2*i)-1)}`);
+    }
+}
+
+baklava(20);
